@@ -22,4 +22,16 @@ class OrderItem < ApplicationRecord
   def self.total(order_id)
     where(order_id: order_id).pluck(:price).sum
   end
+
+  def test_method
+    #this method is just a test
+  end
+
+  def test_method2
+    #this method is just a test
+  end
+
+  def test_method3
+    #this method is just a test
+  end
 end
